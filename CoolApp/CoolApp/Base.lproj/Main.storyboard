@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="CoolApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="CoolAppBg" translatesAutoresizingMaskIntoConstraints="NO" id="nPW-NA-aaA">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="CoolAppLogo" translatesAutoresizingMaskIntoConstraints="NO" id="tgW-77-q1g">
+                                <rect key="frame" x="146" y="115" width="308" height="135"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="308" id="Kax-v0-OtT"/>
+                                    <constraint firstAttribute="height" constant="135" id="Neb-21-GCJ"/>
+                                    <constraint firstAttribute="height" constant="250" id="fKZ-dZ-xhb"/>
+                                </constraints>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="fKZ-dZ-xhb"/>
+                                    </mask>
+                                </variation>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="400" verticalHuggingPriority="400" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" reversesTitleShadowWhenHighlighted="YES" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ow9-pj-Glh">
+                                <rect key="frame" x="75" y="468" width="450" height="30"/>
+                                <inset key="contentEdgeInsets" minX="20" minY="5" maxX="20" maxY="5"/>
+                                <state key="normal" title="Make Me Super Cool!">
+                                    <attributedString key="attributedTitle">
+                                        <fragment content="Make Me Super Cool">
+                                            <attributes>
+                                                <color key="NSColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                                <font key="NSFont" size="16" name="CourierNewPSMT"/>
+                                            </attributes>
+                                        </fragment>
+                                    </attributedString>
+                                </state>
+                                <connections>
+                                    <action selector="btnPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="RT2-by-CXu"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="tgW-77-q1g" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="95" id="2kh-Mz-RjU"/>
+                            <constraint firstItem="nPW-NA-aaA" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="topMargin" id="Ch9-WK-Ftr"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="nPW-NA-aaA" secondAttribute="bottom" id="Y4q-Lj-BlN"/>
+                            <constraint firstItem="tgW-77-q1g" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="alt-qd-eAE"/>
+                            <constraint firstItem="nPW-NA-aaA" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-20" id="cao-Ac-kBP"/>
+                            <constraint firstItem="ow9-pj-Glh" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="dCQ-6t-2aQ"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="nPW-NA-aaA" secondAttribute="trailing" constant="-20" id="j35-7A-kv0"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="ow9-pj-Glh" secondAttribute="bottom" constant="100" id="w2L-V2-yfc"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="coolBg" destination="nPW-NA-aaA" id="dCy-O0-W7l"/>
+                        <outlet property="coolBtn" destination="ow9-pj-Glh" id="Xiv-1F-eWS"/>
+                        <outlet property="coolLogo" destination="tgW-77-q1g" id="6Ix-Vt-IMn"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="305" y="354"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="CoolAppBg" width="1666" height="1137"/>
+        <image name="CoolAppLogo" width="468" height="104"/>
+    </resources>
+</document>
