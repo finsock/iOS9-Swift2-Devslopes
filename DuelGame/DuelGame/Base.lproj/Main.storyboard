@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="DuelGame" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="preview" translatesAutoresizingMaskIntoConstraints="NO" id="JXc-2N-1LV" userLabel="jeansBg">
+                                <rect key="frame" x="20" y="20" width="560" height="560"/>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="50" translatesAutoresizingMaskIntoConstraints="NO" id="SQL-MK-eCJ">
+                                <rect key="frame" x="20" y="20" width="560" height="430"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="EKA-97-e32">
+                                        <rect key="frame" x="0.0" y="0.0" width="560" height="176"/>
+                                        <subviews>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="duel" translatesAutoresizingMaskIntoConstraints="NO" id="h0e-bP-CZt" userLabel="title">
+                                                <rect key="frame" x="0.0" y="0.0" width="560" height="176"/>
+                                                <edgeInsets key="layoutMargins" top="8" left="30" bottom="8" right="30"/>
+                                            </imageView>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" distribution="fillProportionally" translatesAutoresizingMaskIntoConstraints="NO" id="uaE-Cd-QLA">
+                                        <rect key="frame" x="0.0" y="226" width="560" height="25"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dBi-rv-V4L">
+                                                <rect key="frame" x="0.0" y="0.0" width="280" height="25"/>
+                                                <attributedString key="attributedText">
+                                                    <fragment content="Sheriff">
+                                                        <attributes>
+                                                            <color key="NSColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                                            <font key="NSFont" size="24" name="Copperplate-Bold"/>
+                                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                        </attributes>
+                                                    </fragment>
+                                                </attributedString>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EMB-Xe-GHe">
+                                                <rect key="frame" x="280" y="0.0" width="280" height="25"/>
+                                                <attributedString key="attributedText">
+                                                    <fragment content="Outlaw">
+                                                        <attributes>
+                                                            <color key="NSColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                                            <font key="NSFont" size="24" name="Copperplate-Bold"/>
+                                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                        </attributes>
+                                                    </fragment>
+                                                </attributedString>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="75" translatesAutoresizingMaskIntoConstraints="NO" id="fWf-g6-Hcr">
+                                        <rect key="frame" x="0.0" y="300" width="560" height="50"/>
+                                        <subviews>
+                                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" usesAttributedText="YES" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="8Me-bz-Zh3">
+                                                <rect key="frame" x="50" y="8" width="193" height="34"/>
+                                                <attributedString key="attributedText">
+                                                    <fragment content="10">
+                                                        <attributes>
+                                                            <color key="NSColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                                            <font key="NSFont" size="36" name="Copperplate-Bold"/>
+                                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                        </attributes>
+                                                    </fragment>
+                                                </attributedString>
+                                                <textInputTraits key="textInputTraits"/>
+                                            </textField>
+                                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" usesAttributedText="YES" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="1zs-Tg-MrK">
+                                                <rect key="frame" x="318" y="8" width="193" height="34"/>
+                                                <attributedString key="attributedText">
+                                                    <fragment content="10">
+                                                        <attributes>
+                                                            <color key="NSColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                                            <font key="NSFont" size="36" name="Copperplate-Bold"/>
+                                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                        </attributes>
+                                                    </fragment>
+                                                </attributedString>
+                                                <textInputTraits key="textInputTraits"/>
+                                            </textField>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="qdi-PP-rEd"/>
+                                        </constraints>
+                                        <edgeInsets key="layoutMargins" top="8" left="50" bottom="8" right="50"/>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="75" translatesAutoresizingMaskIntoConstraints="NO" id="aV9-0B-kr2">
+                                        <rect key="frame" x="0.0" y="400" width="560" height="30"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SSc-yh-0Zo">
+                                                <rect key="frame" x="30" y="1" width="213" height="28"/>
+                                                <color key="backgroundColor" red="0.16862745100000001" green="0.43529411759999997" blue="0.76470588240000004" alpha="1" colorSpace="calibratedRGB"/>
+                                                <edgeInsets key="layoutMargins" top="8" left="8" bottom="8" right="8"/>
+                                                <state key="normal" title="Sheriff shoots">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="shootButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ieV-Da-rtA"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lp8-pn-BRu">
+                                                <rect key="frame" x="318" y="1" width="213" height="28"/>
+                                                <color key="backgroundColor" red="0.16862745100000001" green="0.43529411759999997" blue="0.76470588240000004" alpha="1" colorSpace="calibratedRGB"/>
+                                                <state key="normal" title="Outlaw shoots">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="shootButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Ywc-SH-Ox2"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="30" id="5OB-EF-hiB"/>
+                                        </constraints>
+                                        <edgeInsets key="layoutMargins" top="1" left="30" bottom="1" right="30"/>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="SQL-MK-eCJ" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="HXX-6r-8b6"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="SQL-MK-eCJ" secondAttribute="bottom" constant="150" id="JkH-Ul-Hnu"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="SQL-MK-eCJ" secondAttribute="trailing" id="Ljl-xR-ewX"/>
+                            <constraint firstItem="JXc-2N-1LV" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="NGw-aK-xBG"/>
+                            <constraint firstItem="JXc-2N-1LV" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="NdC-Ld-gBN"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="JXc-2N-1LV" secondAttribute="bottom" constant="20" id="Y9B-Ny-oww"/>
+                            <constraint firstItem="JXc-2N-1LV" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="ele-0q-0lm"/>
+                            <constraint firstItem="SQL-MK-eCJ" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="qzh-pN-nio"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="outlawHitPoints" destination="1zs-Tg-MrK" id="R3L-yA-8HW"/>
+                        <outlet property="sheriffHitPoints" destination="8Me-bz-Zh3" id="nhN-xl-gWA"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="289" y="-106"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="duel" width="435" height="189"/>
+        <image name="preview" width="1300" height="1300"/>
+    </resources>
+</document>
